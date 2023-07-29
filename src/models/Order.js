@@ -2,12 +2,12 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../utils/connection');
 
 const Order = sequelize.define('order', {
-    order_date: {
-        type: DataTypes.DATE,
+    num_date: {
+        type: DataTypes.INTEGER,
         allowNull: true
     },
     total_amount: {
-        type: DataTypes.DATE,
+        type: DataTypes.DECIMAL,
         allowNull: true
     }
     

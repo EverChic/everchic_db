@@ -29,11 +29,4 @@ router.use('./services', serviceRouter),
 router.use('./status', stateRouter),
 router.use('/tags', tagRouter),
 
-
-
-
-
-
-
-
 module.exports = router;
