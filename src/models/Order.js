@@ -9,7 +9,8 @@ const Order = sequelize.define('order', {
     total_amount: {
         type: DataTypes.DECIMAL,
         allowNull: true
-    }
+    },
+    // customerId
     
 });
 

@@ -1,8 +1,9 @@
 const catchError = require('../utils/catchError');
 const Order = require('../models/Order');
+const Customer = require('../models/Customer');
 
 const getAll = catchError(async(req, res) => {
-    const results = await Order.findAll();
+    const results = await Order.findAll({include: Customer});
     return res.json(results);
 });
 
